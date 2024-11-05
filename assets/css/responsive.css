@@ -1,0 +1,148 @@
+@media only screen and (max-width: 940px) {
+    
+
+    .hero_section .container {
+
+        flex-direction: column;
+    }
+
+    .hero_section .container .col:nth-child(1) {
+
+        width: 100%;
+    }
+
+    .hero_section .container .col:nth-child(2) {
+
+        display: none;
+    }
+
+    .features_section .container {
+
+        gap: 20px;
+    }
+
+    .features_section .container .col .content {
+
+        flex-direction: column;
+    }
+
+    .features_section .container .col .content .text_content_container {
+
+        text-align: center;
+    }
+
+    .trending_section .container .col .title_container {
+
+        width: 100%;
+    }
+
+    .featured_books_section .container {
+
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    header .nav_container .menu_container {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--lightColor);
+        z-index: 1000;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: all 0.5s linear;
+    }
+
+    header .nav_container .menu_container .menu_list {
+
+        flex-direction: column;
+    }
+
+    header .nav_container .menu_container .menu_list li a {
+
+        font-size: clamp(1.2em, 3vw, 2em);
+    }
+
+    header .close_btn {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: var(--textColor);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    header .close_btn i {
+
+        color: var(--lightColor);
+    }
+
+    header .menu_btn {
+
+        display: flex;
+        background: var(--textColor);
+    }
+
+    header .menu_btn i {
+
+        color: var(--lightColor);
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    .features_section .container, .trending_section .container, footer .container, 
+    .copyright_container, .flash_section .container .content_container {
+
+        flex-direction: column;
+    }
+
+    .trending_section .container .col {
+
+        width: 100%;
+    }
+
+    .new_launch_section .container {
+
+        flex-direction: column;
+    }
+
+    .newsletter_section .newsletter_container {
+
+        max-width: 90%;
+    }
+
+    .copyright_container {
+
+        gap: 10px;
+    }
+
+    .hero_swiper_container .slider_container .text_container {
+
+        top: 5%;
+        width: 80%;
+    }
+
+    .hero_swiper_container .slider_container .text_container .btn_container {
+
+        display: none;
+    }
+
+}
